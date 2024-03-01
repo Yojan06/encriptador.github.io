@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <img class="logo" src="img/logoEncriptador.webp" alt="logoEncriptador">
+            <h1 class="tituloHeader">Encryptador</h1>
+        </header>
+
+        <main>
+            <section class="contenido">
+
+                    <textarea placeholder="Ingrese el texto aqui. " class="caja-texto-principal" id="caja_principal" onkeypress="return validacion(event);" oninput="conversion(this)" required></textarea>
+        
+                    <textarea class="caja-texto-secundaria" id="caja_secundaria"></textarea>
+
+                    <input  id="advertencia" disabled></input>
+
+            </section>
+
+            <section class="botones">
+                
+                <button class="btn-encriptar"  onclick="btnEncriptar()" >Encriptar</button>
+
+                <button class="btn-pegar" onclick="btn_pegar()">Pegar</button>
+        
+
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+                <button class="btn-copy" onclick="btnCopy()">copy</button>
+
+            </section>
+            
+        </main>
+
+        <footer>
+            <div class="cuerpoFooter">
+                <h1>Alura Latam</h1>
+                <a href="https://www.facebook.com/ozoria16/"><img class="facebook" src="img/facebook.png" ></a>
+                <a href="https://www.instagram.com/yohan_s.ozoria/"><img class="instagram" src="img/instagram.png" ></a>
+                <a href="https://www.linkedin.com/in/yojan-david-sanchez-osoria-941197211/"><img class="linkedin" src="img/linkedin.png" ></a>
+                <a href="https://github.com/Yojan06"><img class="github" src="img/github.png" ></a>
+            </div>
+            <div class=" animacionFinal"> </div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
